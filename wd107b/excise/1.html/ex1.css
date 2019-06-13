@@ -1,0 +1,58 @@
+body{background-color:#FFE4E1;}
+
+	button {
+		background-color:#D87093;
+		color: #ffffff;
+		padding: 5px;
+		font-size:20px;
+		margin: 5px;
+		border: 1px solid black;
+		border-radius: 3px;
+		width:100px
+	}
+	
+input
+	{
+		padding: 3px;
+		font-size: 10px;
+		margin: 5px;
+		border: 1px solid black;
+		border-radius: 3px;
+    }
+    
+
+h1
+{
+	color:CornflowerBlue ;
+	text-align:center;
+}
+p
+{
+	font-family:"Times New Roman";
+	font-size:20px;
+}
+table
+{
+	background-color:#D87093;
+		color: #ffffff;
+		padding: 3px;
+		font-size:30px;
+		margin: 10px;
+		border: 1px solid black;
+		border-radius:2px;
+		width:500px;
+	border-style:dashed;
+	
+	
+}
+		
+th{
+
+    padding:1px;		
+
+}
+
+td
+	{
+		padding:2px;
+	}

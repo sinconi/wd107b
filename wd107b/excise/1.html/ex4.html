@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<!--<link rel="stylesheet" type="text/css" href="ex1.css"/>--> 
+<link rel="stylesheet" type="text/css" href="ex1.css"/>
+</head>
+<style>
+body{background-color:#FFE4E1;}
+
+	button {
+		background-color:#D87093;
+		color: #ffffff;
+		padding: 5px;
+		font-size:20px;
+		margin: 5px;
+		border: 1px solid black;
+		border-radius: 3px;
+		width:100px
+	}
+	
+input
+	{
+		padding: 3px;
+		font-size: 10px;
+		margin: 5px;
+		border: 1px solid black;
+		border-radius: 3px;
+	}
+	h1 {
+		text-align: left;
+	}
+	    </style>
+<body>
+	
+<h1>大學生問卷調查</h1>
+	<form action="">
+<h3>個人資訊:</h3>
+名字: <input type="text" size="30"><br>
+E-mail: <input type="text" size="30"><br>
+學校: <input type="text" size="10"><br>
+		<form action="demo-form.php">
+  生日: <input type="date" name="bday">
+</form>
+
+</form>
+
+	<form>
+		<h3>性別:</h3>
+<input type="radio" name="sex" value="male">女<br>
+<input type="radio" name="sex" value="female">男
+</form>
+	
+	<form>
+		<h3>目前科系:</h3>
+<input type="radio" name="科系選擇" value="國際系">國際系<br>
+<input type="radio" name="科系選擇" value="企管系">企管系<br>
+<input type="radio" name="科系選擇" value="電子系">電子系<br>
+<input type="radio" name="科系選擇" value="生物系">生物系<br>
+<input type="radio" name="科系選擇" value="經濟系">經濟系<br>
+<input type="radio" name="科系選擇" value="華文系">華文系<br>
+<input type="radio" name="科系選擇" value="電機系">電機系<br>
+<input type="radio" name="科系選擇" value="外文系">外文系<br>
+		<input type="radio" name="科系選擇" value="其他">其他
+</form>
+	
+	<form>
+		<h3>畢業後志向：</h3>
+<input type="checkbox" name="志向" value="軍人">畢業先當兵<br>
+<input type="checkbox" name="志向" value="回家">回家當啃老族<br>
+		<input type="checkbox" name="志向" value="國外">去國外打工度假ＯＲ留學<br>
+		<input type="checkbox" name="志向" value="業務">當各種行業的業務（保險，房屋仲介．．．）<br>
+		<input type="checkbox" name="志向" value="工程師">寫程式<br>
+		<input type="checkbox" name="志向" value="公務人員">考公職<br>
+		<input type="checkbox" name="志向" value="其他">其他<br>
+</form>
+	<br>
+	<button id="b1">提交</button>
+
+</body>
+</html>

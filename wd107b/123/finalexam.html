@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/finalexam.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" href="picture/pig.ico">
+    <title>國際四110413147辛可泥</title>
+</head>
+<body>
+
+    <!-- 主框架 -->
+    <div class="container-fiuid">
+
+        <!-- 時間 -->
+        <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3 time1">
+                <body onload="Today()">
+                    <div id="showbox"></div>
+            </div>
+        </div>
+
+        <!-- 內文 -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-6 transbox">
+                <h1>簡介</h1>
+                <br>
+
+                <ul>
+                    <li>科系:國際四</li>
+                    <li>姓名:辛可泥</li>
+                    <li>學號:110413147</li>
+                    <li>興趣：攝影，吉他，烏克麗麗，羽球</li>
+                    <li>專長:Photoshop,Lightroom,Excel</li>
+                </ul>
+                <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/61080934_2159375440798394_1368747811708862464_n.jpg?_nc_cat=105&_nc_ht=scontent.fkhh1-1.fna&oh=a1fb27147b78156f258b1b40650888f8&oe=5D654BBD" class="img1">
+
+                <P>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='finalexam2.html'">>點 即 進 入 商 城 !</button>
+                </P>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>  
+
+    <!-- 時間模組 -->
+    <script language="JavaScript">
+        function Today() {
+            var Today = new Date();
+            var y = Today.getFullYear(); //抓本地時間的年
+            var M = Today.getMonth() + 1; //抓本地時間的月，月份起使為0，因此必須+1，詞是正確的月份
+            var d = Today.getDate(); //抓本地時間的天
+            var h = Today.getHours();  //抓本地時間的秒
+            var m = Today.getMinutes(); //抓本地時間的分
+            var s = Today.getSeconds(); //抓本地時間的秒
+            document.getElementById('showbox').innerHTML = y + '年' + M + '月' + d + '日' + '\n' + h + '時' + m + '分' + s + '秒'; //顯示時間的格式
+            setTimeout('Today()', 1000); //每秒變化
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+
+//明信片資料庫
+data1 = '[{"name" : "明信片1", "money" : "11"},{"name" : "明信片2", "money" : "12"},{"name" : "明信片3", "money" : "13"},{"name" : "明信片4", "money" : "14"},{"name" : "明信片5", "money" : "15"},{"name" : "明信片6", "money" : "16"},{"name" : "明信片7", "money" : "17"},{"name" : "明信片8", "money" : "18"},{"name" : "明信片9", "money" : "19"}]';
+
+//貼紙
+data2 = '[{"name" : "貼紙1", "money" : "11"},{"name" : "貼紙2", "money" : "12"},{"name" : "貼紙3", "money" : "13"},{"name" : "貼紙4", "money" : "14"},{"name" : "貼紙5", "money" : "15"},{"name" : "貼紙6", "money" : "16"},{"name" : "貼紙7", "money" : "17"},{"name" : "貼紙8", "money" : "18"},{"name" : "貼紙9", "money" : "19"}]';
