@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="picture/pig.ico">
+    <title>國際四110413147辛可泥</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">		<!-- 修改導航欄Css到 menu.css修改 -->
+    <link rel="stylesheet" href="css/Login.css">		<!-- 修改此頁面Css到 Login.css修改 -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--導航欄區塊-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="col-md-8">
+                <div class="navbar-header">
+                    <img src="picture/123123.png" class="img-responsive icon1">	<!--icon1-->
+                </div>
+                <div class="navbar-header active">
+                    <a class="navbar-brand" href="finalexam.html">泥的店</a>	<!--回上頁按鈕-->
+                </div>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="finalexam2.html">明信片</a>
+                    </li>	<!--明信片按鈕-->
+                    <li>
+                        <a href="finalexam3.html">貼紙</a>
+                    </li>	<!--貼紙按鈕-->
+                </ul>
+            </div>
+            <!--登入按鈕-->
+            <div class="col-md-4">
+                <ul class="nav nav-tabs pull-right">
+                    <li>
+                        <a href="LoginCar.html">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>購物車
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Login.html">
+                            <span class="glyphicon glyphicon-user"></span> 登入
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row" style="height:55px;"></div> <!--起始高度55px-->
+
+    <!--登入區塊-->
+    <div class="container-fiuid">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="card">
+                <!--背景區塊-->
+                <div class="row"></div>
+                <h1 class="page-header col-md-offset-2 backtitle">登入購物車</h1>
+                <form role="form" methods='post' onsubmit=" return   check(this)" action="shoppingcart.html">
+                    <!--帳號密碼驗證成功跳轉頁面-->
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <label for="inputEmail3" class="col-md-2 control-label">帳號</label>
+                        <div>
+                            <input name="name1" type="text" id="inputEmail3" placeholder="Email"> <!--帳號輸入框 id為inputEmail3-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <label for="inputPassword3" class="col-md-2 control-label">密碼</label>
+                        <div>
+                            <input name="pass" type="password" id="inputPassword3" placeholder="Password"> <!--密碼輸入框 id為inputPassword3-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-offset-4 col-md-10">
+                            <div>
+                                <label>
+                                    <input type="checkbox">記住我   <!--好看用，無實際功能-->
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-offset-2 col-md-4">
+                            <button class="btn btn-primary btn-block" id="btn" type="submit">登入</button> <!--登入按鈕-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-5">
+                            <img src="picture/admin.png" class="img1">  <!--下方圖片-->
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var A = 'nini'; //帳號1
+        var a = '1234'; //密碼1
+
+        var B = 'niniadmin'; //帳號2
+        var b = '1234'; //密碼2
+
+        //登入驗證功能
+        function check(form) {
+
+            //帳號不得為空
+            if (form.name1.value == '') {
+                alert("請輸入帳號!")
+                return false
+            }
+
+            //密碼不得為空
+            if (form.pass.value == '') {
+                alert("請輸入密碼!")
+                return false
+            }
+
+            //帳號密碼正確(A)
+            if (form.name1.value == A && form.pass.value == a) {
+                alert("歡迎 " + A + " 造訪")
+                return true
+            }
+
+            //帳號密碼正確(B)
+            if (form.name1.value == B && form.pass.value == b) {
+                alert("歡迎 " + B + " 造訪")
+                return true
+            }
+
+            //帳號或密碼輸入錯誤
+            alert("請輸入正確帳號或密碼!")
+            return false
+        }
+    </script>
+</body>
+</html>

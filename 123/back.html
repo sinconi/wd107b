@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="picture/pig.ico">
+    <title>國際四110413147辛可泥</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">		<!-- 修改導航欄Css到 menu.css修改 -->
+    <link rel="stylesheet" href="css/back.css">		<!-- 修改此頁面Css到 finalexam2.css修改 -->
+    <script src="js/jquery.min.js"></script>  <!--表單摺疊-->
+    <script type="text/javascript" src="json/item.json"></script> <!--產品資料庫-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <!--導航欄區塊-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="col-md-8">
+                <div class="navbar-header">
+                    <img src="picture/123123.png" class="img-responsive icon1">	<!--icon1-->
+                </div>
+                <div class="navbar-header active">
+                    <a class="navbar-brand" href="finalexam.html">泥的店</a>	<!--回上頁按鈕-->
+                </div>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="finalexam2.html">明信片</a>
+                    </li>	<!--明信片按鈕-->
+                    <li>
+                        <a href="finalexam3.html">貼紙</a>
+                    </li>	<!--貼紙按鈕-->
+                </ul>
+            </div>
+            <!--登入按鈕-->
+            <div class="col-md-4">
+                <ul class="nav nav-tabs pull-right">
+                    <li>
+                        <a href="LoginCar.html">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>購物車
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Login.html">
+                            <span class="glyphicon glyphicon-user"></span> 登出
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row" style="height:55px;"></div> <!--起始高度55px-->
+    
+    <!--後台功能-->
+    <div class="container-fluid">
+        <div class="col-md-6">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne">
+                                明信片
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>品名</th>
+                                        <th>價格</th>
+                                        <th>修改</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--明信片_產品1-->
+                                    <tr>
+                                        <td id="card1"></td>
+                                        <td id="cmoney1"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit1" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品2-->
+                                    <tr>
+                                        <td id="card2"></td>
+                                        <td id="cmoney2"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit2" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品3-->
+                                    <tr>
+                                        <td id="card3"></td>
+                                        <td id="cmoney3"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit3" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品4-->
+                                    <tr>
+                                        <td id="card4"></td>
+                                        <td id="cmoney4"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit4" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品5-->
+                                    <tr>
+                                        <td id="card5"></td>
+                                        <td id="cmoney5"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit5" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品6-->
+                                    <tr>
+                                        <td id="card6"></td>
+                                        <td id="cmoney6"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit6" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品7-->
+                                    <tr>
+                                        <td id="card7"></td>
+                                        <td id="cmoney7"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit7" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品8-->
+                                    <tr>
+                                        <td id="card8"></td>
+                                        <td id="cmoney8"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit8" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+                                    <!--明信片_產品9-->
+                                    <tr>
+                                        <td id="card9"></td>
+                                        <td id="cmoney9"></td>
+                                        <th>
+                                            <button class="btn btn-primary BuyBtn"  id="edit9" onclick="EditItem()">修改</button>
+                                        </th>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div> <!--表單內容區塊-->
+                </div><!--明信片-->
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo">
+                                貼紙
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>品名</th>
+                                                <th>價格</th>
+                                                <th>修改</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!--貼紙_產品1-->
+                                            <tr>
+                                                <td id="sticker1"></td>
+                                                <td id="smoney1"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit10" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品2-->
+                                            <tr>
+                                                <td id="sticker2"></td>
+                                                <td id="smoney2"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit11" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品3-->
+                                            <tr>
+                                                <td id="sticker3"></td>
+                                                <td id="smoney3"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit12" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品4-->
+                                            <tr>
+                                                <td id="sticker4"></td>
+                                                <td id="smoney4"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit13" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品5-->
+                                            <tr>
+                                                <td id="sticker5"></td>
+                                                <td id="smoney5"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit14" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品6-->
+                                            <tr>
+                                                <td id="sticker6"></td>
+                                                <td id="smoney6"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit15" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品7-->
+                                            <tr>
+                                                <td id="sticker7"></td>
+                                                <td id="smoney7"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit16" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品8-->
+                                            <tr>
+                                                <td id="sticker8"></td>
+                                                <td id="smoney8"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit17" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+                                            <!--貼紙_產品9-->
+                                            <tr>
+                                                <td id="sticker9"></td>
+                                                <td id="smoney9"></td>
+                                                <th>
+                                                    <button class="btn btn-primary BuyBtn"  id="edit18" onclick="EditItem()">修改</button>
+                                                </th>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div> <!--表單內容區塊-->
+
+                        </div>
+                    </div>
+                </div> <!--貼紙-->
+            </div>
+        </div> <!--左側表單-->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="row"></div>
+                <h1 class="page-header col-md-offset-2">產品修改</h1>
+                <form  class="jsonin" role="form" methods='post'>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <label for="itemname" class="col-md-2 control-label">品名:</label>
+                        <div>
+                            <input type="text" class="itemname" placeholder="Name" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <label for="itemmoney" class="col-md-2 control-label">價格:</label>
+                        <div>
+                            <input type="text" class="itemmoney" placeholder="Money">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-offset-2 col-md-4">
+                            <button class="btn btn-primary btn-block" id="btn" type="submit">確認</button> <!--登入按鈕-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> <!--右側輸入框-->
+    </div>
+
+    <!--上傳圖片區塊-->
+    <!--明信片-->
+
+    <script src="js/item1.js"></script> <!--撈產品資料模組_明信片-->
+    <script src="js/item2.js"></script> <!--撈產品資料模組_貼紙-->
+    <script>
+        var editX = ["edit1", "edit2", "edit3", "edit4", "edit5", "edit6", "edit7", "edit8", "edit9", "edit10", "edit11", "edit12", "edit13", "edit14", "edit15", "edit16", "edit17", "edit18",];
+       
+        $('.itemname').val(mydata[0].name);
+        $('.itemmoney').val(mydata[0].money);
+
+        //function EditItem() {
+        //    if()
+
+        //    alert('HI');
+        //}
+       
+    </script>
+
+</body>
+</html>

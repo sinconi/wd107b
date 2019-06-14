@@ -1,0 +1,57 @@
+
+/* ------------------------------導航欄-------------------------------------- */
+/* 導航欄顏色 */
+.navbar-default {
+    background-color: #484848; /*主要顏色 */
+    border-color: #484848; /*邊框顏色 */
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #484848; /*邊框顏色 */
+}
+
+/* ------------------------------icon1 比例-------------------------------------- */
+
+/* icon1 比例 */
+.icon1 {
+    height: 45px;
+    width: 65px;
+}
+
+/* --------------------------導航欄_泥的店--------------------------------- */
+
+/* 導航欄文字顏色_泥的店 */
+.navbar-default .navbar-brand {
+    color: #ddd;
+}
+
+    /* 滑鼠移到導航欄文字變色 */
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: pink;
+        background-color: transparent;
+    }
+
+/* -----------------------------導航欄_貼紙、明信片、購物車、登入--------------------------------------- */
+
+/* 導航欄文字顏色_貼紙、明信片、購物車、登入 */
+.nav > li > a {
+    color: #ddd;
+}
+
+    /* 滑鼠移到導航欄文字變色 */
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        color: pink;
+        background-color: transparent;
+    }
+
+/* 滑鼠移到導航欄邊框變色 */
+.nav-tabs > li > a:hover {
+    border-color: pink pink pink;
+}
+
+/* 貼紙、明信片、購物車、登入按鈕比例 */
+.nav > li > a {
+    padding: 15px 15px;
+}

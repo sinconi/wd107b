@@ -1,0 +1,53 @@
+body
+{
+    background-image:url(https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/61349508_2157832374286034_3310698767581184000_o.jpg?_nc_cat=104&_nc_ht=scontent.fkhh1-2.fna&oh=6ae959101b0e85fcd2b81daf1d0de22a&oe=5D95341A); 
+    background-size:90%;
+    background-repeat:no-repeat;
+    background-position:top;
+}
+
+div.transbox
+{
+  width: 400px;
+  height: 500px;
+  margin: 65px;
+  background-color: #ffffff;
+  opacity:0.6;
+  filter:alpha(opacity=60); 
+}
+
+h1
+{
+    text-align: center;
+    font-family:Microsoft JhengHei;
+    font-weight:bold;
+}
+
+ul
+{
+    font-size:18px;
+    font-family:Microsoft JhengHei;
+    line-height:200%;
+}
+
+.img1
+{
+    height: 120px;
+    width: 150px;
+    margin-left: 110px;
+}
+
+.btn-primary
+{
+  color: #000000;
+  background-color: #ff8f59;
+  border-color: #f75000;
+  margin-top: 35px;
+  margin-left: 65px;
+  width: 250px;
+  font-family:Microsoft JhengHei;
+}
+
+.time1{
+font-size:18px;
+}

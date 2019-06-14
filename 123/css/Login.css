@@ -1,0 +1,32 @@
+
+
+/* ----------------------------主要顏色---------------------------------- */
+
+/* 背景顏色 */
+body {
+    background-color: #fbc9c97d;
+}
+
+/* ----------------------------登入區塊---------------------------------- */
+/*背景區塊*/
+.card
+{
+  width: 400px;
+  height: 400px;
+  margin: 65px;
+  background-color: #f706dc2e;
+  opacity:0.6;
+  filter:alpha(opacity=60); 
+}
+
+.img1
+{
+    height: 150px;
+    width: 150px;
+    margin-left: 55px;
+}
+
+.backtitle
+{
+  font-family:Microsoft JhengHei;
+}
